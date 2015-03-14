@@ -1,0 +1,1308 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman charter
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_title "How People Are Entertained: The Consequences of the 1983 Video Game Crash"
+\pdf_author "Hal Motley"
+\pdf_subject "Technology"
+\pdf_keywords "Atari, Video-Game-Crash, NES, unofficial, cartridges, open-console."
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+How People Are Entertained: 
+\series default
+\size larger
+
+\begin_inset Newline newline
+\end_inset
+
+The Consequences of the 1983 Great Video Game Crash
+\end_layout
+
+\begin_layout Author
+
+\shape smallcaps
+Hal Motley
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+License
+\end_layout
+
+\begin_layout Standard
+This document's contents, PDF file and .lyx source file are licensed under
+ the Creative Commons Attribution-ShareAlike 4.0 International license.
+ Full details of this license can be found here: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://creativecommons.org/licenses/by-sa/4.0/"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+In summary:
+\end_layout
+
+\begin_layout Itemize
+You are free to: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Share
+\shape default
+ - copy and redistribute the material in any medium or format.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Adapt
+\shape default
+ - remix, transform, and build upon the material for any purpose, even commercia
+lly.
+ 
+\end_layout
+
+\begin_layout Itemize
+The licensor cannot revoke these freedoms as long as you follow the license
+ terms.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Under the following terms:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Attribution 
+\shape default
+- You must give appropriate credit, provide a link to the license, and indicate
+ if changes were made.
+ You may do so in any reasonable manner, but not in any way that suggests
+ the licensor endorses you or your use.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+ShareAlike
+\shape default
+ - If you remix, transform, or build upon the material, you must distribute
+ your contributions under the same license as the original.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+No additional restrictions
+\shape default
+ - You may not apply legal terms or technological measures that legally
+ restrict others from doing anything the license permits.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Notices:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You do not have to comply with the license for elements of the material
+ in the public domain or where your use is permitted by an applicable exception
+ or limitation.
+\end_layout
+
+\begin_layout Itemize
+No warranties are given.
+ The license may not give you all of the permissions necessary for your
+ intended use.
+ For example, other rights such as publicity, privacy, or moral rights may
+ limit how you use the material.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Foreword
+\end_layout
+
+\begin_layout Standard
+This article was written back in 2013 for an assignment for my first (and
+ only) year of Computer Science at the University of Derby.
+ The assignment asked that the article be 2-3 pages long and stringently
+ follow the IEEE document standard.
+ 
+\end_layout
+
+\begin_layout Standard
+As someone who can't stand Times New Roman (particularly at point size 12),
+ I was never quite satisfied with what I submitted even when I was happy
+ with the content I had written and the images I had found and provided.
+\end_layout
+
+\begin_layout Standard
+So I have finally put this article where I believe it belongs; in a LyX
+ document with attractive typesetting in a presentable serif typeface (Charis
+ SIL) using knowledge I have gained afterward from book typesetting and
+ eBook production.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+I also wanted to fix up some grammatical mistakes, re-check the reference
+ links and do some general fixes.
+ So with that in mind I do consider this updated version of the article
+ to be the superior version.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The original article I submitted was recently published and then released
+ to the general public via the 
+\begin_inset Quotes eld
+\end_inset
+
+Computers for Everyone
+\begin_inset Quotes erd
+\end_inset
+
+ section of their 
+\begin_inset Quotes eld
+\end_inset
+
+Open Journal Systems @ Department of Computing & Mathematics @ Derby
+\begin_inset Quotes erd
+\end_inset
+
+ website.
+ There are also plenty of other articles by fellow students who I shared
+ with on my course, I recommend you read them too!
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://computing.derby.ac.uk/ojs/index.php/c4e/article/view/90/67"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Content
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+Abstract
+\end_layout
+
+\begin_layout Standard
+This document explains what led to the Great Video Game Crash in 1983.
+ The main consequences will then be presented, in particular, the lockdown
+ of consoles to unofficial games, and homebrew.
+ Finally, the recent successful use of the open model will be briefly reviewed.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+Index Terms
+\end_layout
+
+\begin_layout Standard
+Atari, Video-Game-Crash, NES, unofficial, cartridges, open-console.
+\end_layout
+
+\begin_layout Subsection*
+
+\shape smallcaps
+Introduction
+\end_layout
+
+\begin_layout Standard
+The year is 2013, video games are commonplace and the industry as a whole
+ seems to be prospering well (Gartner, 2013).
+ It was not always smooth sailing and for a short while the entire games
+ industry's future was put into question, after a 97% drop in market value
+ in 1983 during the Atari era in the United States (CleverNoobs, 2013, 0:0:20;
+ Electronic Games Magazine, 1985, pp.
+ 30-31).
+\end_layout
+
+\begin_layout Subsection*
+
+\shape smallcaps
+The Great Video Game Crash of 1983
+\end_layout
+
+\begin_layout Standard
+The name of this huge dent on the industry was The Great Video Game Crash
+ of 1983.
+ The name is used to describe the events that brought the market value down
+ to such a low level.
+ It was caused by multiple factors, which can almost be completely attributed
+ to the Atari 2600's openness because anyone could make cartridges for the
+ console.
+ 
+\end_layout
+
+\begin_layout Standard
+The first step towards the crash happened in 1979 when a handful of disgruntled
+ games developers working for Atari were unhappy that they were not credited
+ for each game's development and that they did not receive royalties for
+ each copy sold.
+ Since Atari refused to alter their policy to fit the games developers'
+ demands, they left the company to form the World's first 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party publisher, Activision (Activision, n.d.).
+ This first step meant that not only did Atari lose talent but they gained
+ competition.
+ The console's openness meant that Activision could make and sell cartridges
+ for the Atari 2600 without paying any license or royalties back to Atari.
+ This was not helpful to Atari at all and foreshadowed what was yet to come.
+ 
+\end_layout
+
+\begin_layout Standard
+The second step was that Atari released some poor 1
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+st
+\end_layout
+
+\end_inset
+
+ party licensed titles for the 2600, both Pac-Man and E.T.
+ the Extra-Terrestrial (E.T.) which were released in 1982.
+ They were highly anticipated but badly received by critics and fans because
+ they were full of bugs and glitches and not particularly fun to play.
+ This was not helped by the fact they were both were rushed to completion
+ and lacked quality assurance by Atari.
+ Atari had spent a great deal of money in licensing fees for rights to E.T.
+ and Pac-Man, and they got little financial gain from it when their customers
+ realised that these games were not worth the investment (Giant Bomb, E.T.)
+ (IGN, Top 10 Best-Selling Atari 2600 Games).
+\end_layout
+
+\begin_layout Standard
+The third step was that many other companies were wanting to the ride the
+ video game money train.
+ Back in the 1980's, video games were the fastest growing industry in all
+ the USA.
+ Many companies including Quaker, Purina and Mystique all made atrocious
+ games to capitalise on huge market.
+ Though this effect pushed it down even further (CleverNoobs, 2013).
+ With games like Chase the Chuck Wagon, Name this Game and, all created
+ by these companies purely for profit over entertainment value.
+ 
+\end_layout
+
+\begin_layout Standard
+The fourth step was that at the same as the Atari 2600 era was the birth
+ of the affordable personal computer which could allow the consumer to both
+ play games and be productive.
+ Further adding competition to Atari's business because there were other
+ machines on the market that could do multiple things for your money (CleverNoob
+s, 2013, 0.2.0).
+ With all these terrible games out there and competition from the personal
+ computer space, most consumers simply got tired and angry playing with
+ console games.
+ So enough consumers voted with their wallets and decided not to buy them.
+ This caused the market to topple over and caused the 97% drop from $3.2
+ billion (~
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pounds{}
+\end_layout
+
+\end_inset
+
+2 billion) to $100 million (~
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pounds{}
+\end_layout
+
+\end_inset
+
+63 million) almost dooming it completely (CleverNoobs, 2013, 0:0:50)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/atari2600.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Atari 2600 Console
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\shape smallcaps
+Recovery of the Console
+\end_layout
+
+\begin_layout Standard
+The market was almost down and out, consumers were immensely cynical of
+ the words “video game”.
+ If it was not for Nintendo, through some clever marketing tactics with
+ the advertising of Robotic Operating Buddy (R.O.B), a peripheral for their
+ upcoming Nintendo Entertainment System (NES) console the console gaming
+ industry might not have ever been resuscitated back to its former glory.
+ 
+\end_layout
+
+\begin_layout Standard
+The NES managed to bring the industry back on track, with Nintendo learning
+ from Atari's mistakes in the past.
+ Nintendo saw that 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party development for their console could be beneficial to their business,
+ but it should be controlled with licensing (an agreement between the publisher
+ and the console manufacturer) to ensure both quality control and enable
+ Nintendo to profit off the games' sales.
+ There were many successful 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party titles including Tetris (1989), Teenage Mutant Ninja Turtles (1989)
+ and Punch-Out!! (1987).
+ Nintendo did not rest on their laurels with just 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party content and began to release games of their own much like Atari did.
+ Many of these games were the first entry to many loved franchises including
+ Super Mario Bros.
+ in 1985 (which itself was the bestselling NES game of all-time), Legend
+ of Zelda (1986) and Metroid (1986).
+ These were all well received by the audience and, subsequently, have received
+ many sequels to this day.
+ 
+\end_layout
+
+\begin_layout Standard
+Since the NES console was locked down due to Nintendo learning from Atari's
+ main mistake of allowing oversaturation of content, games that were not
+ approved by Nintendo would be released unofficially as cartridges but would
+ never receive the sales figures or critical attention that most official
+ content would receive (IGN, n.d.).
+ This included games that were not even submitted to Nintendo to approve
+ because of content, a reluctance to pay licensing fees and a disagreement
+ over licensing conditions.
+ The unofficial cartridges would often look physically different to official
+ cartridges and used techniques to bypass the 10NES authorisation chip that
+ were present in official cartridges to ensure only official cartridges
+ could be played (Horton K., n.d.).
+ In fact, Atari under a subsidiary called Tengen, actually made unofficial
+ cartridges for the NES as well as having their games officially released
+ on the console under the Atari name (Oxford, 2005).
+\end_layout
+
+\begin_layout Standard
+The console continued selling until the NES's successor Super Nintendo Entertain
+ment System (SNES) arrived in the early 90's as the direct successor to
+ the NES.
+ While it sold less units than the original NES, it retained dominance over
+ competition from Sega with their MegaDrive (Genesis in the USA) and other
+ consoles.
+ The console itself had full 16-bit capabilities bringing improved graphical
+ and sound capabilities with it (Buchanan, 2009).
+ Subsequent consoles would also be locked down and the consumer would be
+ prevented from playing unofficial 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party content and using unofficial 3rd party accessories by the manufacturers,
+ because it was a system that was proven to work for the console manufacturers
+ (Chacksfield, 2010).
+\end_layout
+
+\begin_layout Standard
+Whilst there were a few hobby consoles that were open to modification by
+ the manufacturer, such as, the Pandora console by OpenPandora, and the
+ Dingoo A320 by Dingoo Technology Ltd, none of these consoles took the Internet
+ by storm like the OUYA did.
+ The OUYA, which is a $99 (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pounds{}
+\end_layout
+
+\end_inset
+
+99) microconsole using Google's Android™ platform, received $8,596,474 (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pounds{}
+\end_layout
+
+\end_inset
+
+5,346,069) in funding with 63,416 backers via the crowdfunding platform
+ Kickstarter in 2012 (Kickstarter, 2012).
+ This suggests that customers had a great deal of faith in the concept of
+ an open console.
+ Furthermore the OUYA has recently celebrated its 500th game, that is, Neon
+ Shadow (Tasty Poison Games, 2013).
+ The OUYA is built on the foundation of being an open system where every
+ game is free to try out with games available to purchase via digital distributi
+on.
+ In September 2013 Valve formally announced the Steam Machine, which is
+ an open console backed by them which allows modification in a similar fashion
+ to that of an ordinary gaming PC (Valve, 2013).
+ The fact that Valve has invested in custom hardware for the Steam Machine
+ itself, the controller and the operating system, implies that they have
+ confidence in making profit from an open console.
+ 
+\end_layout
+
+\begin_layout Standard
+This is most likely due to the extreme popularity of their digital distribution
+ Steam.
+ Steam (and most other digital distributors) solved Atari's issue back in
+ the early 1980's, by managing quality control via a number of methods.
+ For example, Steam Greenlight allows the opportunity for potential customers
+ to vote for a game before it is allowed to be sold on the storefront.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/ouya.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+OUYA Console
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/steammachine.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Steam Machine Concept
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Bibliography
+\end_layout
+
+\begin_layout Subsection*
+References
+\end_layout
+
+\begin_layout Standard
+References for the main text are listed alphabetically by author rather
+ than chronologically:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Activision
+\series default
+ (n.d.) 
+\shape italic
+Historical Timeline
+\shape default
+ (online)
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://investor.activision.com/timeline.cfm"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 13
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ November 2013 
+\series bold
+\color red
+(Dead Link)
+\series default
+\color inherit
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Buchanan, L.
+ 
+\series default
+(2009) 
+\shape italic
+Genesis vs.
+ SNES: By the Numbers
+\shape default
+ (online)
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://uk.ign.com/articles/2009/03/20/genesis-vs-snes-by-the- numbers"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Chacksfield, M.
+
+\series default
+ (2010) 
+\shape italic
+Nintendo DS R4 cards declared illegal in UK
+\shape default
+ (online)
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.techradar.com/news/gaming/nintendo-ds-r4-cards- declared-illegal-in-uk-706317"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+CleverNoobs 
+\series default
+(2013) 
+\shape italic
+Is the Gaming Industry Crashing? 
+\shape default
+(online)
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.youtube.com/watch?v=XZxXEidtxHk"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Gartner
+\series default
+ (2013) 
+\shape italic
+Gartner says Worldwide Video Game Market to Total $93 billion in 2013
+\shape default
+ (online)
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.gartner.com/newsroom/id/2614915"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Horton, K.
+
+\series default
+ (n.d.) 
+\shape italic
+The Infamous Lockout Chip
+\shape default
+ (online)
+\begin_inset Newline newline
+\end_inset
+
+ Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.kevtris.org/mappers/lockout/"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+IGN
+\series default
+ (n.d.) 
+\shape italic
+Top 100 NES Games
+\shape default
+.
+ (online) IGN Entertainment Ltd.
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://uk.ign.com/top-100-nes-games/"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015) 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Katz, A.
+
+\series default
+ (1985) 1984: 
+\shape italic
+The Year That Shook Electronic Gaming
+\shape default
+.
+ Electronic Games Magazine.
+\begin_inset Newline newline
+\end_inset
+
+ (January, pp 30-31) NY: Reese Communications Ltd.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Kickstarter
+\series default
+ (2012) 
+\shape italic
+OUYA: A New Kind of Video Game Console
+\shape default
+ (online) 
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.kickstarter.com/projects/ouya/ouya-a-new-kind-of-video-game-console"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Oxford, N.
+
+\series default
+ (2005) 
+\shape italic
+Trials & Tribulations: Video games many visits to court.
+
+\shape default
+ (online) 
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ (Last Date Accessed: 14
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ November 2013 
+\series bold
+\color red
+(Dead Link)
+\series default
+\color inherit
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Tasty Poison Games
+\series default
+ (2013) 
+\shape italic
+Neon Shadow 500th game on OUYA!
+\shape default
+ (online) 
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://tastypoisongames.com/2013/11/neon-shadow-500th-game-ouya/"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Valve
+\series default
+ (2013) 
+\shape italic
+Steam Machines
+\shape default
+ (online) 
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://store.steampowered.com/livingroom/SteamMachines/"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Subsection*
+List of Sources for Images
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Amos, E.
+
+\series default
+ (2011) 
+\shape italic
+An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
+\shape default
+.
+ (online)
+\begin_inset Newline newline
+\end_inset
+
+ Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://en.wikipedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Listdium
+\series default
+ (n.d.) 
+\shape italic
+Super Fast Processor
+\shape default
+ (online) 
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.listedium.com/features-of-ouya-android-based/"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Hollister, S.
+
+\series default
+ (2013) 
+\shape italic
+We Play With the Steam Machine, Valve's Game Console of the Future
+\shape default
+ (online) 
+\begin_inset Newline newline
+\end_inset
+
+Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.theverge.com/2013/11/4/5063760/we-try-the-steam-machine-valves-video-game-console-of-the-future"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(Last Date Accessed: 12
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ March 2015)
+\end_layout
+
+\end_body
+\end_document
