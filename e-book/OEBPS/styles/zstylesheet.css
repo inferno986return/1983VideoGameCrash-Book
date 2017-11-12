@@ -1,0 +1,197 @@
+/*Zylon Stylesheet CSS - zstylesheet.css - v0.1
+-------------------------------------------
+
+Part of Project Zylon though licensed under the Unlicense. License can be viewed at: http://unlicense.org/
+Need help? Refer to the Zylon Guide at: (ebookbuild.github.io/)
+
+-------------------------------------------*/
+
+/*Titles*/
+
+h1.title
+{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2.title
+{
+	font-size: 1.7em;
+	font-weight: normal;
+	text-align: center;
+}
+
+h3.title
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+/*Chapter Headings*/
+
+h1.heading
+{
+	font-size: 1.7em;
+	font-weight: bold;
+	text-align: left;
+}
+
+/*Contents headings*/
+
+h1.toc
+{
+	margin: 0em;
+	font-size: 1.4em;
+}
+
+h2.toc
+{
+	margin: 0em;
+	font-size: 1.4em;
+	font-variant: small-caps;
+}
+
+h1.indent, h2.indent
+{
+	margin: 0em;
+	text-indent: 1em;
+}
+
+
+/*Sub Headings*/
+
+h1.subheading
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0em;
+}
+
+h2.subheading
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: left;
+	font-variant: small-caps;
+	margin-bottom: 0em;
+}
+
+/*Paragraphs*/
+
+p
+{
+	font-size: 1em;
+	text-align: left;
+	margin: 0px 0em 0em 0em;
+	text-align: justify;
+	text-indent: 1em;
+	hyphens: none;
+	display: inline-block;
+}
+
+p.noindent /*Every starting paragraph should start with this.*/
+{
+	text-indent: 0em !important;
+}
+
+p.top, .top
+{
+	margin-top: 1em;
+}
+
+p.bottom, .bottom
+{
+	margin-bottom: 1em;
+}
+
+p.center, .center
+{
+	text-align: center;
+}
+
+p.sans
+{
+	font-family: sans-serif;
+}
+
+p.mono
+{
+	font-family: monospace;
+}
+
+/*Initial Letter*/
+/*Intial letters (also known as dropcaps or illuminated letters) are the large letters used at the start of a chapter for emphasis.*/
+
+.initial /*Code snagged from Wikipedia.*/
+{
+	float: left;
+	font-size: 4em;
+	line-height: 0.95em;
+	vertical-align: baseline;
+}
+
+/*Formatting*/
+/*Use <span> tags use these for formatting the e-book’s text*/
+
+.sc /*Adds small caps to text*/
+{
+	font-variant: small-caps;
+}
+
+.ul /*Underlines text*/
+{
+	text-decoration: underline;
+}
+
+.strikethrough /* Strikes through the text */
+{
+	text-decoration: line-through;
+}
+
+.tt /*Used to put a group of words or a sentence in monospaced font.*/
+{
+	font-family: monospace;
+}
+
+/*Text Alignment*/
+
+/*Lists (Ordered and Unordered)*/
+
+/*Images*/
+
+.image-center
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	/*border: solid 2px; Useful for debugging.*/
+}
+
+.image
+{
+	display: block;
+	margin:auto;
+	/*border: solid red 1px;*/
+}
+
+.figure-caption
+{
+	margin-bottom: 1em;
+	font-size: 1em;
+	text-align: center !important;
+	color: #434343;
+	/*border: solid 1px;*/
+}
+
+/*RTL (Right-to-Left) - For Arabic, Persian, Hebrew, etc...*/
+
+.rtl
+{
+	direction: rtl;
+}

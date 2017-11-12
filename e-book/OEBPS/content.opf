@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>How People Are Entertained: The Consequences of the 1983 Great Video Game
+Crash</dc:title>
+    <dc:creator>Hal Motley</dc:creator>
+    <dc:subject>Academic</dc:subject>
+    <dc:publisher>Hal Motley</dc:publisher>
+    <dc:identifier id="bookid">-</dc:identifier>
+    <dc:language>EN</dc:language>
+    <dc:rights>Creative-Commons</dc:rights>
+    <meta content="main_cover_image" name="cover"/>
+  </metadata>
+  <manifest>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="images/cover.jpg" id="main_cover_image" media-type="image/jpeg"/>
+    <item href="images/atari2600e-book.jpg" id="as" media-type="image/jpeg"/>
+    <item href="images/ouyae-book.jpg" id="at" media-type="image/jpeg"/>
+    <item href="images/steammachinee-book.jpg" id="au" media-type="image/jpeg"/>
+    <item href="bookcover.xhtml" id="cover" media-type="application/xhtml+xml"/>
+    <item href="title.xhtml" id="a" media-type="application/xhtml+xml"/>
+    <item href="license.xhtml" id="b" media-type="application/xhtml+xml"/>
+    <item href="preface.xhtml" id="c" media-type="application/xhtml+xml"/>
+    <item href="toc.xhtml" id="d" media-type="application/xhtml+xml"/>
+    <item href="article.xhtml" id="e" media-type="application/xhtml+xml"/>
+    <item href="bibliography.xhtml" id="f" media-type="application/xhtml+xml"/>
+    <item href="styles/zstylesheet.css" id="av" media-type="text/css"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover"/>
+    <itemref idref="a"/>
+    <itemref idref="b"/>
+    <itemref idref="c"/>
+    <itemref idref="d"/>
+    <itemref idref="e"/>
+    <itemref idref="f"/>
+  </spine>
+</package>

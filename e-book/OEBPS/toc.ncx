@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="-" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>How People Are Entertained: The Consequences of the 1983 Great Video Game Crash</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="001" class="h1" playOrder="1">
+      <navLabel>
+        <text>Title</text>
+      </navLabel>
+      <content src="title.xhtml" />
+    </navPoint>
+    <navPoint id="002" class="h1" playOrder="2">
+      <navLabel>
+        <text>License</text>
+      </navLabel>
+      <content src="license.xhtml" />
+    </navPoint>
+    <navPoint id="003" class="h1" playOrder="3">
+      <navLabel>
+        <text>Preface</text>
+      </navLabel>
+      <content src="preface.xhtml" />
+    </navPoint>
+    <navPoint id="004" class="h1" playOrder="4">
+      <navLabel>
+        <text>Contents</text>
+      </navLabel>
+      <content src="toc.xhtml" />
+      <navPoint id="005" class="h1" playOrder="5">
+        <navLabel>
+          <text>Article</text>
+        </navLabel>
+        <content src="article.xhtml" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="006" class="h1" playOrder="6">
+      <navLabel>
+        <text>Bibliography</text>
+      </navLabel>
+      <content src="bibliography.xhtml" />
+    </navPoint>
+  </navMap>
+</ncx>
