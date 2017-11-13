@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-    <dc:title>How People Are Entertained: The Consequences of the 1983 Great Video Game
-Crash</dc:title>
+    <dc:title>How People Are Entertained: The Consequences of the 1983 Great Video Game Crash</dc:title>
     <dc:creator>Hal Motley</dc:creator>
     <dc:subject>Academic</dc:subject>
     <dc:publisher>Hal Motley</dc:publisher>
     <dc:identifier id="bookid">-</dc:identifier>
     <dc:language>EN</dc:language>
-    <dc:rights>Creative-Commons</dc:rights>
+    <dc:rights>Creative-Commons SA</dc:rights>
     <meta content="main_cover_image" name="cover"/>
   </metadata>
   <manifest>
