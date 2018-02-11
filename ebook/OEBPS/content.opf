@@ -20,8 +20,7 @@
 		<item href="images/ouyae-book.jpg" id="image5" media-type="image/jpeg"/>
 		<item href="bookcover.xhtml" id="front_cover" media-type="application/xhtml+xml"/>
 		<item href="title.xhtml" id="title" media-type="application/xhtml+xml"/>
-		<item href="indicia.xhtml" id="indicia" media-type="application/xhtml+xml"/>
-		<item href="license.xhtml" id="license" media-type="application/xhtml+xml"/>
+		<item href="license.xhtml" id="licenses" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="contents" media-type="application/xhtml+xml"/>
 		<item href="preface.xhtml" id="preface" media-type="application/xhtml+xml"/>
 		<item href="article.xhtml" id="article" media-type="application/xhtml+xml"/>
@@ -30,8 +29,7 @@
 	<spine toc="ncx">
 		<itemref idref="front_cover"/>
 		<itemref idref="title"/>
-		<itemref idref="indicia"/>
-		<itemref idref="license"/>
+		<itemref idref="licenses"/>
 		<itemref idref="contents"/>
 		<itemref idref="preface"/>
 		<itemref idref="article"/>

@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -15,13 +15,13 @@
 \font_roman charter
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -45,15 +45,24 @@
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -79,7 +88,7 @@
 \begin_layout Title
 
 \series bold
-How People Are Entertained: 
+How People Are Entertained:
 \series default
 \size larger
 
@@ -103,13 +112,27 @@ Hal Motley
 \end_layout
 
 \begin_layout Section*
-License
+Licenses
+\end_layout
+
+\begin_layout Subsection*
+Content license
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename images/by-sa.png
+	scale 120
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
 This document's contents, PDF file and .lyx source file are licensed under
  the Creative Commons Attribution-ShareAlike 4.0 International license.
- Full details of this license can be found here: 
+ Full details of this license can be found here:
 \begin_inset Newline newline
 \end_inset
 
@@ -121,20 +144,16 @@ target "http://creativecommons.org/licenses/by-sa/4.0/"
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
+\begin_layout Subsection*
 
 \series bold
 In summary:
 \end_layout
 
 \begin_layout Itemize
-You are free to: 
+You are free to:
 \end_layout
 
 \begin_deeper
@@ -144,7 +163,6 @@ You are free to:
 Share
 \shape default
  - copy and redistribute the material in any medium or format.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -154,7 +172,6 @@ Adapt
 \shape default
  - remix, transform, and build upon the material for any purpose, even commercia
 lly.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -171,7 +188,7 @@ Under the following terms:
 \begin_layout Itemize
 
 \shape italic
-Attribution 
+Attribution
 \shape default
 - You must give appropriate credit, provide a link to the license, and indicate
  if changes were made.
@@ -218,6 +235,82 @@ No warranties are given.
 \end_layout
 
 \end_deeper
+\begin_layout Subsection*
+E-book license
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/PD-icon.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This e-book's LaTeX, XHTML, CSS and XML source code are licensed under 
+\series bold
+The Unlicense
+\series default
+.
+ For more information, please refer to
+\begin_inset CommandInset href
+LatexCommand href
+target "http://unlicense.org"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This is free and unencumbered software released into the public domain.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute
+ this software, either in source code form or as a compiled binary, for
+ any purpose, commercial or non-commercial, and by any means.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In jurisdictions that recognize copyright laws, the author or authors of
+ this software dedicate any and all copyright interest in the software to
+ the public domain.
+ We make this dedication for the benefit of the public at large and to the
+ detriment of our heirs and successors.
+ We intend this dedication to be an overt act of relinquishment in perpetuity
+ of all present and future rights to this software under copyright law.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ IN THE SOFTWARE.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -226,7 +319,7 @@ No warranties are given.
 \end_layout
 
 \begin_layout Section*
-Foreword
+Preface
 \end_layout
 
 \begin_layout Standard
@@ -234,7 +327,6 @@ This article was written back in 2013 for an assignment for my first (and
  only) year of Computer Science at the University of Derby.
  The assignment asked that the article be 2-3 pages long and stringently
  follow the IEEE document standard.
- 
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +359,7 @@ I also wanted to fix up some grammatical mistakes, re-check the reference
 \end_inset
 
 The original article I submitted was recently published and then released
- to the general public via the 
+ to the general public via the
 \begin_inset Quotes eld
 \end_inset
 
@@ -275,7 +367,7 @@ Computers for Everyone
 \begin_inset Quotes erd
 \end_inset
 
- section of their 
+ section of their
 \begin_inset Quotes eld
 \end_inset
 
@@ -307,7 +399,7 @@ target "http://computing.derby.ac.uk/ojs/index.php/c4e/article/view/90/67"
 \end_layout
 
 \begin_layout Section*
-Content
+Article
 \end_layout
 
 \begin_layout Subsection*
@@ -363,7 +455,6 @@ The name of this huge dent on the industry was The Great Video Game Crash
  It was caused by multiple factors, which can almost be completely attributed
  to the Atari 2600's openness because anyone could make cartridges for the
  console.
- 
 \end_layout
 
 \begin_layout Standard
@@ -387,7 +478,6 @@ rd
  The console's openness meant that Activision could make and sell cartridges
  for the Atari 2600 without paying any license or royalties back to Atari.
  This was not helpful to Atari at all and foreshadowed what was yet to come.
- 
 \end_layout
 
 \begin_layout Standard
@@ -400,13 +490,25 @@ st
 
 \end_inset
 
- party licensed titles for the 2600, both Pac-Man and E.T.
- the Extra-Terrestrial (E.T.) which were released in 1982.
+ party licensed titles for the 2600, both 
+\shape italic
+Pac-Man
+\shape default
+ and 
+\shape italic
+E.T.
+ the Extra-Terrestrial
+\shape default
+ (E.T.) which were released in 1982.
  They were highly anticipated but badly received by critics and fans because
  they were full of bugs and glitches and not particularly fun to play.
  This was not helped by the fact they were both were rushed to completion
  and lacked quality assurance by Atari.
- Atari had spent a great deal of money in licensing fees for rights to E.T.
+ Atari had spent a great deal of money in licensing fees for rights to 
+\shape italic
+E.T.
+
+\shape default
  and Pac-Man, and they got little financial gain from it when their customers
  realised that these games were not worth the investment (Giant Bomb, E.T.)
  (IGN, Top 10 Best-Selling Atari 2600 Games).
@@ -420,9 +522,16 @@ The third step was that many other companies were wanting to the ride the
  Many companies including Quaker, Purina and Mystique all made atrocious
  games to capitalise on huge market.
  Though this effect pushed it down even further (CleverNoobs, 2013).
- With games like Chase the Chuck Wagon, Name this Game and, all created
- by these companies purely for profit over entertainment value.
- 
+ With games like 
+\shape italic
+Chase the Chuck Wagon
+\shape default
+, 
+\shape italic
+Name this Game
+\shape default
+ and, all created by these companies purely for profit over entertainment
+ value.
 \end_layout
 
 \begin_layout Standard
@@ -485,7 +594,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Atari 2600 Console
@@ -518,16 +627,24 @@ The market was almost down and out, consumers were immensely cynical of
  the advertising of Robotic Operating Buddy (R.O.B), a peripheral for their
  upcoming Nintendo Entertainment System (NES) console the console gaming
  industry might not have ever been resuscitated back to its former glory.
- 
 \end_layout
 
 \begin_layout Standard
 The NES managed to bring the industry back on track, with Nintendo learning
  from Atari's mistakes in the past.
- Nintendo saw that 3rd-party development for their console could be beneficial
- to their business, but it should be controlled with licensing (an agreement
- between the publisher and the console manufacturer) to ensure both quality
- control and enable Nintendo to profit off the games' sales.
+ Nintendo saw that 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party development for their console could be beneficial to their business,
+ but it should be controlled with licensing (an agreement between the publisher
+ and the console manufacturer) to ensure both quality control and enable
+ Nintendo to profit off the games' sales.
  There were many successful 3
 \begin_inset script superscript
 
@@ -537,8 +654,19 @@ rd
 
 \end_inset
 
- party titles including Tetris (1989), Teenage Mutant Ninja Turtles (1989)
- and Punch-Out!! (1987).
+ party titles including 
+\shape italic
+Tetris
+\shape default
+ (1989), 
+\shape italic
+Teenage Mutant Ninja Turtles
+\shape default
+ (1989) and 
+\shape italic
+Punch-Out!!
+\shape default
+ (1987).
  Nintendo did not rest on their laurels with just 3
 \begin_inset script superscript
 
@@ -550,12 +678,22 @@ rd
 
  party content and began to release games of their own much like Atari did.
  Many of these games were the first entry to many loved franchises including
- Super Mario Bros.
- in 1985 (which itself was the bestselling NES game of all-time), Legend
- of Zelda (1986) and Metroid (1986).
+ 
+\shape italic
+Super Mario Bros.
+
+\shape default
+ in 1985 (which itself was the bestselling NES game of all-time), 
+\shape italic
+Legend of Zelda
+\shape default
+ (1986) and 
+\shape italic
+Metroid
+\shape default
+ (1986).
  These were all well received by the audience and, subsequently, have received
  many sequels to this day.
- 
 \end_layout
 
 \begin_layout Standard
@@ -595,9 +733,17 @@ rd
 
 \end_inset
 
- party content and using unofficial 3rd party accessories by the manufacturers,
- because it was a system that was proven to work for the console manufacturers
- (Chacksfield, 2010).
+ party content and using unofficial 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ party accessories by the manufacturers, because it was a system that was
+ proven to work for the console manufacturers (Chacksfield, 2010).
 \end_layout
 
 \begin_layout Standard
@@ -635,8 +781,20 @@ pounds{}
  Kickstarter in 2012 (Kickstarter, 2012).
  This suggests that customers had a great deal of faith in the concept of
  an open console.
- Furthermore the OUYA has recently celebrated its 500th game, that is, Neon
- Shadow (Tasty Poison Games, 2013).
+ Furthermore the OUYA has recently celebrated its 500
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ game, that is, 
+\shape italic
+Neon Shadow
+\shape default
+ (Tasty Poison Games, 2013).
  The OUYA is built on the foundation of being an open system where every
  game is free to try out with games available to purchase via digital distributi
 on.
@@ -646,7 +804,6 @@ on.
  The fact that Valve has invested in custom hardware for the Steam Machine
  itself, the controller and the operating system, implies that they have
  confidence in making profit from an open console.
- 
 \end_layout
 
 \begin_layout Standard
@@ -656,7 +813,6 @@ This is most likely due to the extreme popularity of their digital distribution
  the early 1980's, by managing quality control via a number of methods.
  For example, Steam Greenlight allows the opportunity for potential customers
  to vote for a game before it is allowed to be sold on the storefront.
- 
 \begin_inset Newline newline
 \end_inset
 
@@ -679,7 +835,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 OUYA Console
@@ -714,7 +870,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Steam Machine Concept
@@ -752,7 +908,7 @@ References for the main text are listed alphabetically by author rather
 \series bold
 Activision
 \series default
- (n.d.) 
+ (n.d.)
 \shape italic
 Historical Timeline
 \shape default
@@ -760,14 +916,14 @@ Historical Timeline
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://investor.activision.com/timeline.cfm"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -780,7 +936,7 @@ th
 
 \end_inset
 
- November 2013 
+ November 2013
 \series bold
 \color red
 (Dead Link)
@@ -793,9 +949,8 @@ th
 
 \series bold
 Buchanan, L.
- 
 \series default
-(2009) 
+(2009)
 \shape italic
 Genesis vs.
  SNES: By the Numbers
@@ -804,14 +959,14 @@ Genesis vs.
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://uk.ign.com/articles/2009/03/20/genesis-vs-snes-by-the- numbers"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -833,7 +988,7 @@ th
 Chacksfield, M.
 
 \series default
- (2010) 
+ (2010)
 \shape italic
 Nintendo DS R4 cards declared illegal in UK
 \shape default
@@ -841,14 +996,14 @@ Nintendo DS R4 cards declared illegal in UK
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.techradar.com/news/gaming/nintendo-ds-r4-cards- declared-illegal-in-uk-706317"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -867,24 +1022,24 @@ th
 \begin_layout Enumerate
 
 \series bold
-CleverNoobs 
+CleverNoobs
 \series default
-(2013) 
+(2013)
 \shape italic
-Is the Gaming Industry Crashing? 
+Is the Gaming Industry Crashing?
 \shape default
 (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.youtube.com/watch?v=XZxXEidtxHk"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -905,7 +1060,7 @@ th
 \series bold
 Gartner
 \series default
- (2013) 
+ (2013)
 \shape italic
 Gartner says Worldwide Video Game Market to Total $93 billion in 2013
 \shape default
@@ -913,14 +1068,14 @@ Gartner says Worldwide Video Game Market to Total $93 billion in 2013
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.gartner.com/newsroom/id/2614915"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -942,7 +1097,7 @@ th
 Horton, K.
 
 \series default
- (n.d.) 
+ (n.d.)
 \shape italic
 The Infamous Lockout Chip
 \shape default
@@ -950,14 +1105,14 @@ The Infamous Lockout Chip
 \begin_inset Newline newline
 \end_inset
 
- Available at: 
+ Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.kevtris.org/mappers/lockout/"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -978,7 +1133,7 @@ th
 \series bold
 IGN
 \series default
- (n.d.) 
+ (n.d.)
 \shape italic
 Top 100 NES Games
 \shape default
@@ -987,14 +1142,14 @@ Top 100 NES Games
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://uk.ign.com/top-100-nes-games/"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1007,7 +1162,7 @@ th
 
 \end_inset
 
- March 2015) 
+ March 2015)
 \end_layout
 
 \begin_layout Enumerate
@@ -1016,7 +1171,7 @@ th
 Katz, A.
 
 \series default
- (1985) 1984: 
+ (1985) 1984:
 \shape italic
 The Year That Shook Electronic Gaming
 \shape default
@@ -1033,22 +1188,22 @@ The Year That Shook Electronic Gaming
 \series bold
 Kickstarter
 \series default
- (2012) 
+ (2012)
 \shape italic
 OUYA: A New Kind of Video Game Console
 \shape default
- (online) 
+ (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.kickstarter.com/projects/ouya/ouya-a-new-kind-of-video-game-console"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1070,16 +1225,16 @@ th
 Oxford, N.
 
 \series default
- (2005) 
+ (2005)
 \shape italic
 Trials & Tribulations: Video games many visits to court.
 
 \shape default
- (online) 
+ (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
@@ -1099,7 +1254,7 @@ th
 
 \end_inset
 
- November 2013 
+ November 2013
 \series bold
 \color red
 (Dead Link)
@@ -1113,22 +1268,22 @@ th
 \series bold
 Tasty Poison Games
 \series default
- (2013) 
+ (2013)
 \shape italic
 Neon Shadow 500th game on OUYA!
 \shape default
- (online) 
+ (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://tastypoisongames.com/2013/11/neon-shadow-500th-game-ouya/"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1149,22 +1304,22 @@ th
 \series bold
 Valve
 \series default
- (2013) 
+ (2013)
 \shape italic
 Steam Machines
 \shape default
- (online) 
+ (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://store.steampowered.com/livingroom/SteamMachines/"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1190,7 +1345,7 @@ List of Sources for Images
 Amos, E.
 
 \series default
- (2011) 
+ (2011)
 \shape italic
 An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
 \shape default
@@ -1199,14 +1354,14 @@ An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
 \begin_inset Newline newline
 \end_inset
 
- Available at: 
+ Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://en.wikipedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1227,22 +1382,22 @@ th
 \series bold
 Listdium
 \series default
- (n.d.) 
+ (n.d.)
 \shape italic
 Super Fast Processor
 \shape default
- (online) 
+ (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.listedium.com/features-of-ouya-android-based/"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1264,22 +1419,22 @@ th
 Hollister, S.
 
 \series default
- (2013) 
+ (2013)
 \shape italic
 We Play With the Steam Machine, Valve's Game Console of the Future
 \shape default
- (online) 
+ (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at: 
+Available at:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.theverge.com/2013/11/4/5063760/we-try-the-steam-machine-valves-video-game-console-of-the-future"
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 

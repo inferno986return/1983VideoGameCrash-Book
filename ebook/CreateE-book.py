@@ -216,6 +216,25 @@ def GenEpub():
     with open('metadata.json') as json_file:
         data = json.load(json_file)
 
+    #Generate the mimetype.
+    mime = open("mimetype", "w")
+    
+    mime.write('application/epub+zip')
+
+    mime.close()
+
+    #Generate the META-INF.
+    metainf = open('META-INF' + os.sep + "container.xml", "w")
+
+    metainf.write('<?xml version="1.0"?>')
+    metainf.write('<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">')
+    metainf.write('\t<rootfiles>')
+    metainf.write('\t\t<rootfile full-path="' + data["containerFolder"] + '/content.opf" media-type="application/oebps-package+xml" />')
+    metainf.write('\t</rootfiles>')
+    metainf.write('</container>')
+
+    metainf.close()
+
     #The ePub standard requires deflated compression and a compression order.
     zf = zipfile.ZipFile(data["fileName"] + '.epub', mode='w', compression=zipfile.ZIP_STORED)
 
@@ -228,7 +247,7 @@ def GenEpub():
             print('dirname:' + dirname)
             print('filename:' + filename)
 
-    for dirname, subdirs, files in os.walk('OEBPS'):
+    for dirname, subdirs, files in os.walk(data["containerFolder"]):
         zf.write(dirname)
         for filename in files:
             zf.write(os.path.join(dirname, filename))

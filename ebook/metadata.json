@@ -43,36 +43,30 @@
 					{
 						"pageNumber": "2",
 						"indentation": "1",
-						"pageName": "Indicia",
-						"fileName": "indicia.xhtml"
-					},
-					{
-						"pageNumber": "3",
-						"indentation": "1",
-						"pageName": "License",
+						"pageName": "Licenses",
 						"fileName": "license.xhtml"
 					},
 					{
-						"pageNumber": "4",
+						"pageNumber": "3",
 						"indentation": "1",
 						"pageName": "Contents",
 						"fileName": "toc.xhtml"
 					},
 					{
-						"pageNumber": "5",
+						"pageNumber": "4",
 						"indentation": "1",
 						"pageName": "Preface",
 						"fileName": "preface.xhtml"
 					},
 					{
-						"pageNumber": "6",
+						"pageNumber": "5",
 						"indentation": "1",
 						"pageName": "Article",
 						"fileName": "article.xhtml"
 					},
 					{
-						"pageNumber": "7",
-						"indentation": "2",
+						"pageNumber": "6",
+						"indentation": "1",
 						"pageName": "Bibliography",
 						"fileName": "bibliography.xhtml"
 					}
