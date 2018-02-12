@@ -226,11 +226,11 @@ def GenEpub():
     #Generate the META-INF.
     metainf = open('META-INF' + os.sep + "container.xml", "w")
 
-    metainf.write('<?xml version="1.0"?>')
-    metainf.write('<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">')
-    metainf.write('\t<rootfiles>')
-    metainf.write('\t\t<rootfile full-path="' + data["containerFolder"] + '/content.opf" media-type="application/oebps-package+xml" />')
-    metainf.write('\t</rootfiles>')
+    metainf.write('<?xml version="1.0"?>\n')
+    metainf.write('<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">\n')
+    metainf.write('\t<rootfiles>\n')
+    metainf.write('\t\t<rootfile full-path="' + data["containerFolder"] + '/content.opf" media-type="application/oebps-package+xml" />\n')
+    metainf.write('\t</rootfiles>\n')
     metainf.write('</container>')
 
     metainf.close()
