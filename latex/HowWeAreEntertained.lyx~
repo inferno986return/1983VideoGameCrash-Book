@@ -929,16 +929,20 @@ Activision
 \series default
  (n.d.)
 \shape italic
-Historical Timeline
+ Historical Timeline
 \shape default
  (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at:
+Available at: 
+\strikeout on
+http://investor.activision.com/timeline.cfm
+\strikeout default
+ (dead link), archive available at: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://investor.activision.com/timeline.cfm"
+target "http://web.archive.org/web/20131018030348/http://investor.activision.com/timeline.cfm"
 
 \end_inset
 
@@ -955,13 +959,7 @@ th
 
 \end_inset
 
- November 2013
-\series bold
-\color red
-(Dead Link)
-\series default
-\color inherit
-)
+ February 2018)
 \end_layout
 
 \begin_layout Enumerate
@@ -971,7 +969,7 @@ Buchanan, L.
 \series default
 (2009)
 \shape italic
-Genesis vs.
+ Genesis vs.
  SNES: By the Numbers
 \shape default
  (online)
@@ -1009,7 +1007,7 @@ Chacksfield, M.
 \series default
  (2010)
 \shape italic
-Nintendo DS R4 cards declared illegal in UK
+ Nintendo DS R4 cards declared illegal in UK
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1045,7 +1043,7 @@ CleverNoobs
 \series default
 (2013)
 \shape italic
-Is the Gaming Industry Crashing?
+ Is the Gaming Industry Crashing?
 \shape default
 (online)
 \begin_inset Newline newline
@@ -1081,7 +1079,7 @@ Gartner
 \series default
  (2013)
 \shape italic
-Gartner says Worldwide Video Game Market to Total $93 billion in 2013
+ Gartner says Worldwide Video Game Market to Total $93 billion in 2013
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1118,7 +1116,7 @@ Horton, K.
 \series default
  (n.d.)
 \shape italic
-The Infamous Lockout Chip
+ The Infamous Lockout Chip
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1154,7 +1152,7 @@ IGN
 \series default
  (n.d.)
 \shape italic
-Top 100 NES Games
+ Top 100 NES Games
 \shape default
 .
  (online) IGN Entertainment Ltd.
@@ -1190,9 +1188,9 @@ th
 Katz, A.
 
 \series default
- (1985) 1984:
+ (1985) 
 \shape italic
-The Year That Shook Electronic Gaming
+1984: The Year That Shook Electronic Gaming
 \shape default
 .
  Electronic Games Magazine.
@@ -1209,7 +1207,7 @@ Kickstarter
 \series default
  (2012)
 \shape italic
-OUYA: A New Kind of Video Game Console
+ OUYA: A New Kind of Video Game Console
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1246,17 +1244,21 @@ Oxford, N.
 \series default
  (2005)
 \shape italic
-Trials & Tribulations: Video games many visits to court.
+ Trials & Tribulations: Video games many visits to court.
 
 \shape default
  (online)
 \begin_inset Newline newline
 \end_inset
 
-Available at:
+Originally available at: 
+\strikeout on
+http://www.1up.com/features/trials-and-tribulations?pager.offset=1
+\strikeout default
+ (dead link), archive available at: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
+target "https://web.archive.org/web/20131017023035/http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
 
 \end_inset
 
@@ -1264,7 +1266,7 @@ target "http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
 \begin_inset Newline newline
 \end_inset
 
- (Last Date Accessed: 14
+ (Last Date Accessed: 13
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1273,13 +1275,7 @@ th
 
 \end_inset
 
- November 2013
-\series bold
-\color red
-(Dead Link)
-\series default
-\color inherit
-)
+ February 2018)
 \end_layout
 
 \begin_layout Enumerate
@@ -1289,7 +1285,7 @@ Tasty Poison Games
 \series default
  (2013)
 \shape italic
-Neon Shadow 500th game on OUYA!
+ Neon Shadow 500th game on OUYA!
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1366,7 +1362,7 @@ Amos, E.
 \series default
  (2011)
 \shape italic
-An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
+ An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
 \shape default
 .
  (online)
@@ -1403,7 +1399,7 @@ Listdium
 \series default
  (n.d.)
 \shape italic
-Super Fast Processor
+ Super Fast Processor
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1440,7 +1436,7 @@ Hollister, S.
 \series default
  (2013)
 \shape italic
-We Play With the Steam Machine, Valve's Game Console of the Future
+ We Play With the Steam Machine, Valve's Game Console of the Future
 \shape default
  (online)
 \begin_inset Newline newline

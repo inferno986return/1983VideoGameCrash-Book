@@ -935,10 +935,14 @@ Activision
 \begin_inset Newline newline
 \end_inset
 
-Available at:
+Available at: 
+\strikeout on
+http://investor.activision.com/timeline.cfm
+\strikeout default
+ (dead link), archive available at: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://investor.activision.com/timeline.cfm"
+target "http://web.archive.org/web/20131018030348/http://investor.activision.com/timeline.cfm"
 
 \end_inset
 
@@ -946,7 +950,7 @@ target "http://investor.activision.com/timeline.cfm"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 13
+(Last date accessed: 13
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -955,13 +959,7 @@ th
 
 \end_inset
 
- November 2013
-\series bold
-\color red
-(Dead Link)
-\series default
-\color inherit
-)
+ February 2018)
 \end_layout
 
 \begin_layout Enumerate
@@ -989,7 +987,7 @@ target "http://uk.ign.com/articles/2009/03/20/genesis-vs-snes-by-the- numbers"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1026,7 +1024,7 @@ target "http://www.techradar.com/news/gaming/nintendo-ds-r4-cards- declared-ille
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1062,7 +1060,7 @@ target "http://www.youtube.com/watch?v=XZxXEidtxHk"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1135,7 +1133,7 @@ target "http://www.kevtris.org/mappers/lockout/"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1172,7 +1170,7 @@ target "http://uk.ign.com/top-100-nes-games/"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1226,7 +1224,7 @@ target "http://www.kickstarter.com/projects/ouya/ouya-a-new-kind-of-video-game-c
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1253,10 +1251,14 @@ Oxford, N.
 \begin_inset Newline newline
 \end_inset
 
-Available at:
+Originally available at: 
+\strikeout on
+http://www.1up.com/features/trials-and-tribulations?pager.offset=1
+\strikeout default
+ (dead link), archive available at: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
+target "https://web.archive.org/web/20131017023035/http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
 
 \end_inset
 
@@ -1264,7 +1266,7 @@ target "http://www.1up.com/features/trials-and-tribulations?pager.offset=1"
 \begin_inset Newline newline
 \end_inset
 
- (Last Date Accessed: 14
+ (Last date accessed: 13
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1273,13 +1275,7 @@ th
 
 \end_inset
 
- November 2013
-\series bold
-\color red
-(Dead Link)
-\series default
-\color inherit
-)
+ February 2018)
 \end_layout
 
 \begin_layout Enumerate
@@ -1306,7 +1302,7 @@ target "http://tastypoisongames.com/2013/11/neon-shadow-500th-game-ouya/"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1384,7 +1380,7 @@ target "http://en.wikipedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1420,7 +1416,7 @@ target "http://www.listedium.com/features-of-ouya-android-based/"
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1457,7 +1453,7 @@ target "http://www.theverge.com/2013/11/4/5063760/we-try-the-steam-machine-valve
 \begin_inset Newline newline
 \end_inset
 
-(Last Date Accessed: 12
+(Last date accessed: 12
 \begin_inset script superscript
 
 \begin_layout Plain Layout
