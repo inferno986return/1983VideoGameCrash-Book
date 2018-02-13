@@ -10,6 +10,7 @@
 #JSON extraction magic
 
 import os
+import time
 import json
 from collections import OrderedDict
 
@@ -29,6 +30,7 @@ def GenOPF():
     opf.write('\t\t<dc:subject>' + data["subject"] + '</dc:subject>\n')
     opf.write('\t\t<dc:publisher>' + data["publisher"] + '</dc:publisher>\n')
     opf.write('\t\t<dc:identifier id="bookid">' + data["ISBN"] + '</dc:identifier>\n')
+    #opf.write('\t\t<dc:date>' + (time.strftime("%m-%d-%Y")) + '</dc:date>\n')
     opf.write('\t\t<dc:language>' + data["language"] + '</dc:language>\n')
     opf.write('\t\t<dc:rights>' + data["rights"] + '</dc:rights>\n')
     opf.write('\t\t<meta content="main_cover_image" name="cover"/>\n')

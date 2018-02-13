@@ -33,6 +33,14 @@ h3.title
 	font-variant: small-caps;
 }
 
+h4.title
+{
+	margin-top: 7em;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+}
+
 /*Chapter Headings*/
 
 h1.heading
@@ -95,42 +103,42 @@ p
 	display: inline-block;
 }
 
-p.noindent, .noindent /*Every starting paragraph should start with this.*/
+.noindent /*Every starting paragraph should start with this.*/
 {
 	text-indent: 0em !important;
 }
 
-p.top, .top
+.top
 {
 	margin-top: 1em;
 }
 
-p.bottom, .bottom
+.bottom
 {
 	margin-bottom: 1em;
 }
 
-p.left, .left
+.left
 {
 	text-align: left;
 }
 
-p.center, .center
+.center
 {
 	text-align: center;
 }
 
-p.right, .right
+.right
 {
 	text-align: right;
 }
 
-p.sans, .sans
+.sans
 {
 	font-family: sans-serif;
 }
 
-p.mono, .mono
+.mono
 {
 	font-family: monospace;
 }
@@ -168,6 +176,14 @@ p.quote2
 	font-style: normal;
 }
 
+/*References*/
+
+.ref
+{
+	margin-left: 0em;
+	font-size: 0.9em;
+}
+
 /*Initial Letter*/
 /*Intial letters (also known as dropcaps or illuminated letters) are the large letters used at the start of a chapter for emphasis.*/
 
@@ -187,12 +203,12 @@ p.quote2
 	font-variant: small-caps;
 }
 
-.ul /*Underlines text*/
+.uli /*Underlines text*/
 {
 	text-decoration: underline;
 }
 
-.strikethrough /* Strikes through the text */
+.st /* Strikes through the text */
 {
 	text-decoration: line-through;
 }
@@ -214,26 +230,38 @@ li
   hyphens: none;
 }
 
+.sublist
+{
+	margin: 0em;
+}
+
 /*Tables*/
 table
 {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #000;
 }
 
 td, th
 {
   text-indent: 0em !important;
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-top: 0.5em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-top: 0.2em;
   margin-left: 0em;
   margin-right: 0em;
   vertical-align: top;
-  text-align: left;
+  text-align: center;
   page-break-inside: avoid;
   hyphens: none;
-  font-size: 1em;
+  font-size: 0.9em;
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: #000;
 }
 
 /*Images*/
@@ -244,6 +272,16 @@ td, th
 	margin-bottom: 1em;
 	margin-left: auto;
 	margin-right: auto;
+	width: 50%;
+	/*border: solid 2px; Useful for debugging.*/
+}
+
+.image-left
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
 	width: 50%;
 	/*border: solid 2px; Useful for debugging.*/
 }

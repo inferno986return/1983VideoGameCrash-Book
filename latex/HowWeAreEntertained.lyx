@@ -105,6 +105,22 @@ Hal Motley
 \end_layout
 
 \begin_layout Standard
+\align center
+
+\size large
+2
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+nd
+\end_layout
+
+\end_inset
+
+ Edition
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -166,7 +182,7 @@ You are free to:
 \shape italic
 Share
 \shape default
- - copy and redistribute the material in any medium or format.
+ – copy and redistribute the material in any medium or format.
 \end_layout
 
 \begin_layout Itemize
@@ -174,7 +190,7 @@ Share
 \shape italic
 Adapt
 \shape default
- - remix, transform, and build upon the material for any purpose, even commercia
+ – remix, transform, and build upon the material for any purpose, even commercia
 lly.
 \end_layout
 
@@ -194,8 +210,8 @@ Under the following terms:
 \shape italic
 Attribution
 \shape default
-- You must give appropriate credit, provide a link to the license, and indicate
- if changes were made.
+ – You must give appropriate credit, provide a link to the license, and
+ indicate if changes were made.
  You may do so in any reasonable manner, but not in any way that suggests
  the licensor endorses you or your use.
 \end_layout
@@ -205,7 +221,7 @@ Attribution
 \shape italic
 ShareAlike
 \shape default
- - If you remix, transform, or build upon the material, you must distribute
+ – If you remix, transform, or build upon the material, you must distribute
  your contributions under the same license as the original.
 \end_layout
 
@@ -214,7 +230,7 @@ ShareAlike
 \shape italic
 No additional restrictions
 \shape default
- - You may not apply legal terms or technological measures that legally
+ – You may not apply legal terms or technological measures that legally
  restrict others from doing anything the license permits.
 \end_layout
 
@@ -330,7 +346,14 @@ Preface
 This article was written back in 2013 for an assignment for my first (and
  only) year of Computer Science at the University of Derby.
  The assignment asked that the article be 2-3 pages long and stringently
- follow the IEEE document standard.
+ follow the IEEE document standard (
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.ieee.org/documents/MSW_A4_format.doc"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -343,27 +366,19 @@ As someone who can't stand Times New Roman (particularly at point size 12),
 So I have finally put this article where I believe it belongs; in a LyX
  document with attractive typesetting in a presentable serif typeface (Charis
  SIL) using knowledge I have gained afterward from book typesetting and
- eBook production.
-\begin_inset Newline newline
-\end_inset
+ e-book production.
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
+\begin_layout Standard
 I also wanted to fix up some grammatical mistakes, re-check the reference
- links and do some general fixes.
+ links, do some general fixes and provide an ePub counterpart.
  So with that in mind I do consider this updated version of the article
  to be the superior version.
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
+\begin_layout Standard
 The original article I submitted was recently published and then released
- to the general public via the
+ to the general public via the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -371,7 +386,7 @@ Computers for Everyone
 \begin_inset Quotes erd
 \end_inset
 
- section of their
+ section of their 
 \begin_inset Quotes eld
 \end_inset
 
@@ -914,7 +929,7 @@ Activision
 \series default
  (n.d.)
 \shape italic
-Historical Timeline
+ Historical Timeline
 \shape default
  (online)
 \begin_inset Newline newline
@@ -956,7 +971,7 @@ Buchanan, L.
 \series default
 (2009)
 \shape italic
-Genesis vs.
+ Genesis vs.
  SNES: By the Numbers
 \shape default
  (online)
@@ -994,7 +1009,7 @@ Chacksfield, M.
 \series default
  (2010)
 \shape italic
-Nintendo DS R4 cards declared illegal in UK
+ Nintendo DS R4 cards declared illegal in UK
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1030,7 +1045,7 @@ CleverNoobs
 \series default
 (2013)
 \shape italic
-Is the Gaming Industry Crashing?
+ Is the Gaming Industry Crashing?
 \shape default
 (online)
 \begin_inset Newline newline
@@ -1066,7 +1081,7 @@ Gartner
 \series default
  (2013)
 \shape italic
-Gartner says Worldwide Video Game Market to Total $93 billion in 2013
+ Gartner says Worldwide Video Game Market to Total $93 billion in 2013
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1103,7 +1118,7 @@ Horton, K.
 \series default
  (n.d.)
 \shape italic
-The Infamous Lockout Chip
+ The Infamous Lockout Chip
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1139,7 +1154,7 @@ IGN
 \series default
  (n.d.)
 \shape italic
-Top 100 NES Games
+ Top 100 NES Games
 \shape default
 .
  (online) IGN Entertainment Ltd.
@@ -1175,9 +1190,9 @@ th
 Katz, A.
 
 \series default
- (1985) 1984:
+ (1985) 
 \shape italic
-The Year That Shook Electronic Gaming
+1984: The Year That Shook Electronic Gaming
 \shape default
 .
  Electronic Games Magazine.
@@ -1194,7 +1209,7 @@ Kickstarter
 \series default
  (2012)
 \shape italic
-OUYA: A New Kind of Video Game Console
+ OUYA: A New Kind of Video Game Console
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1231,7 +1246,7 @@ Oxford, N.
 \series default
  (2005)
 \shape italic
-Trials & Tribulations: Video games many visits to court.
+ Trials & Tribulations: Video games many visits to court.
 
 \shape default
  (online)
@@ -1274,7 +1289,7 @@ Tasty Poison Games
 \series default
  (2013)
 \shape italic
-Neon Shadow 500th game on OUYA!
+ Neon Shadow 500th game on OUYA!
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1351,7 +1366,7 @@ Amos, E.
 \series default
  (2011)
 \shape italic
-An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
+ An Atari 2600 four-switch "wood veneer" version, dating from 1980-1982
 \shape default
 .
  (online)
@@ -1388,7 +1403,7 @@ Listdium
 \series default
  (n.d.)
 \shape italic
-Super Fast Processor
+ Super Fast Processor
 \shape default
  (online)
 \begin_inset Newline newline
@@ -1425,7 +1440,7 @@ Hollister, S.
 \series default
  (2013)
 \shape italic
-We Play With the Steam Machine, Valve's Game Console of the Future
+ We Play With the Steam Machine, Valve's Game Console of the Future
 \shape default
  (online)
 \begin_inset Newline newline

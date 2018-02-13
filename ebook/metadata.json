@@ -14,6 +14,7 @@
 		"epubVersion": "2.0.1",
 		"textPresentation": "Reflowable",
 		"generateKindle": "no",
+		"generateGoogle": "yes",
 
 		"comment4": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. ISBN number can be declared, as well as the Amazon ASIN. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
 		"title": "How We Are Entertained: The Consequences of the 1983 Great Video Game Crash",
