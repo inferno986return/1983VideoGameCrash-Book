@@ -272,7 +272,7 @@ td, th
 	margin-bottom: 1em;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 100%;
 	/*border: solid 2px; Useful for debugging.*/
 }
 
@@ -282,14 +282,14 @@ td, th
 	margin-bottom: 1em;
 	margin-left: 0em;
 	margin-right: 0em;
-	width: 50%;
+	width: 100%;
 	/*border: solid 2px; Useful for debugging.*/
 }
 
 .image
 {
 	display: block;
-	margin:auto;
+	margin: auto;
 	/*border: solid red 1px;*/
 }
 
