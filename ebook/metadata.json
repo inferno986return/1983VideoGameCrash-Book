@@ -45,7 +45,11 @@
 						"pageNumber": "2",
 						"indentation": "1",
 						"pageName": "Licenses",
-						"fileName": "license.xhtml"
+						"fileName": "license.xhtml",
+						"indentHeading0Name": "Content license",
+						"indentHeading0Anchor": "#content-license",
+						"indentHeading1Name": "E-book license",
+						"indentHeading1Anchor": "#ebook-license"
 					},
 					{
 						"pageNumber": "3",
@@ -63,13 +67,28 @@
 						"pageNumber": "5",
 						"indentation": "1",
 						"pageName": "Article",
-						"fileName": "article.xhtml"
+						"fileName": "article.xhtml",
+						"indentHeading0Name": "Abstract",
+						"indentHeading0Anchor": "#abstract",
+						"indentHeading1Name": "Index Terms",
+						"indentHeading1Anchor": "#indexterms",
+						"indentHeading2Name": "Introduction",
+						"indentHeading2Anchor": "#introduction",
+						"indentHeading3Name": "The Great Video Game Crash of 1983",
+						"indentHeading3Anchor": "#greatcrash",
+						"indentHeading3Name": "Recovery of the Console",
+						"indentHeading3Anchor": "#recovery"
+
 					},
 					{
 						"pageNumber": "6",
 						"indentation": "1",
 						"pageName": "Bibliography",
-						"fileName": "bibliography.xhtml"
+						"fileName": "bibliography.xhtml",
+						"indentHeading0Name": "References",
+						"indentHeading0Anchor": "#references",
+						"indentHeading1Name": "List of Sources for Images",
+						"indentHeading1Anchor": "#imagesources"
 					}
 				]
 }

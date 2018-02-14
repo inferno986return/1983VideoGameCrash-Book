@@ -38,11 +38,11 @@ def GenOPF():
     #Fixed (non-reflowable) support
     if data["textPresentation"] == "Reflowable" or "reflowable":
         print('e-book type: Reflowable')
-
+        
     elif data["textPresentation"] == "Fixed layout" or "Fixed Layout" or "fixed layout" or "fixed":
         opf.write('\t\t<meta name="fixed-layout" content="true"/>\n')
         print('e-book type: Fixed layout')
-
+    
     opf.write('\t</metadata>\n')
 
     #Manifest tags
@@ -59,7 +59,7 @@ def GenOPF():
             if filepath.endswith(".css"):
                 opf.write('\t\t<item href="' + correctfilepath + '" id="css' + str(cssindex) + '" media-type="text/css"/>\n')
                 print (filepath)
-                cssindex += 1
+                cssindex += 1           
 
     #Write out the NCX and cover image files
     opf.write('\t\t<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>\n')
@@ -99,13 +99,12 @@ def GenOPF():
 
     currentpage = 0
     totalpages = len(data["pages"]) #Number of pages
-
+    
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
         pageid = str.lower(data["pages"][currentpage]["pageName"]) #remove capital letters and spaces from the id attribute (works with Unicode)
         correctpageid = pageid.replace(" ","_")
-
+        
         opf.write('\t\t<item href="' + data["pages"][currentpage]["fileName"] + '" id="' + correctpageid + '" media-type="application/xhtml+xml"/>\n')
-        currentpage += 1
 
     #Write out all the custom fonts in the book.
 
@@ -135,11 +134,11 @@ def GenOPF():
 
     currentpage = 0
     totalpages = len(data["pages"]) #Number of pages
-
+    
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON.
         pageid = str.lower(data["pages"][currentpage]["pageName"]) #remove capital letters and spaces from the id attribute (works with Unicode)
         correctpageid = pageid.replace(" ","_")
-
+        
         opf.write('\t\t<itemref idref="' + correctpageid + '"/>\n')
         currentpage += 1
 
@@ -152,9 +151,9 @@ def GenOPF():
 
 #Create a compatible toc.ncx from scratch.
 def GenNCX():
-
+   
     ncx = open(data["containerFolder"] + os.sep + "toc.ncx", "w")
-
+    
     ncx.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
     ncx.write('<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">\n')
 
@@ -163,16 +162,16 @@ def GenNCX():
     ncx.write('\t<meta name="dtb:uid" content="' + data["ISBN"] + '" />\n') #Has to be the same as dc:identifier.
 
     #Declare the maximum amount of indentation from 1 to 4.
-
+    
     indentations = [] #Assemble a Python list (array) with all the indentations and take the largest number.
     currentpage = 0
     totalpages = len(data["pages"]) #Number of pages
-
-    while currentpage != totalpages:
+    
+    while currentpage != totalpages: 
         indentations.append(data["pages"][currentpage]["indentation"])
         maxdepth = max(indentations)
         currentpage += 1
-
+    
     ncx.write('\t<meta name="dtb:depth" content="' + str(maxdepth) + '" />\n')
     ncx.write('\t<meta name="dtb:totalPageCount" content="0" />\n')
     ncx.write('\t<meta name="dtb:maxPageNumber" content="0" />\n')
@@ -190,7 +189,8 @@ def GenNCX():
     index = 1
     totalpages = len(data["pages"]) #Number of pages
 
-    while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON, indendation currently unsupported (data["pages"][currentpage]["indentation"].
+    while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON, indendation currently unsupported (data["pages"][currentpage]["indentation"]. 
+        #if data["pages"][currentpage + 1]["Indentation"] != "2" or "3" or "4": #Don't indent.       
 
         ncx.write('\t<navPoint id="navpoint-' + str(currentpage) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
         ncx.write('\t\t<navLabel>\n')
@@ -199,11 +199,19 @@ def GenNCX():
         ncx.write('\t\t<content src="'+ data["pages"][currentpage]["fileName"] +'" />\n')
         ncx.write('\t</navPoint>\n')
 
+        #elif data["pages"][currentpage + 1]["Indentation"] = "2": #Indent once
+            
+            #ncx.write('\t<navPoint id="navpoint-' + str(currentpage) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
+            #ncx.write('\t\t<navLabel>\n')
+            #ncx.write('\t\t\t<text>' + data["pages"][currentpage]["pageName"] + '</text>\n')
+            #ncx.write('\t\t</navLabel>\n')
+            #ncx.write('\t\t<content src="'+ data["pages"][currentpage]["fileName"] +'" />\n')
+
         currentpage += 1
         index += 1
-
+    
     ncx.write('</navMap>\n')
-
+    
     #End of file
     ncx.write('</ncx>')
 
@@ -214,13 +222,13 @@ def GenEpub():
     import os
     import json
     import zipfile
-
+    
     with open('metadata.json') as json_file:
         data = json.load(json_file)
 
     #Generate the mimetype.
     mime = open("mimetype", "w")
-
+    
     mime.write('application/epub+zip')
 
     mime.close()
