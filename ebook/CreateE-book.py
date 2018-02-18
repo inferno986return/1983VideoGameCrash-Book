@@ -36,12 +36,15 @@ def GenOPF():
     opf.write('\t\t<meta content="main_cover_image" name="cover"/>\n')
 
     #Fixed (non-reflowable) support
-    if data["textPresentation"] == "Reflowable" or "reflowable":
+    if (data["textPresentation"] == "Reflowable" or data["textPresentation"] == "reflowable" or data["textPresentation"] == "reflow"):
         print('e-book type: Reflowable')
 
-    elif data["textPresentation"] == "Fixed layout" or "Fixed Layout" or "fixed layout" or "fixed":
+    elif (data["textPresentation"] == "Fixed layout" or data["textPresentation"] == "Fixed Layout" or data["textPresentation"] == "fixed layout" or data["textPresentation"] == "fixed"):
         opf.write('\t\t<meta name="fixed-layout" content="true"/>\n')
         print('e-book type: Fixed layout')
+
+    else:
+        print('Invalid textPresentation in metadata.json.')
 
     opf.write('\t</metadata>\n')
 
