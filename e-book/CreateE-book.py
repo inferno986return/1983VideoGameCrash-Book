@@ -13,6 +13,7 @@ import os
 import time
 import json
 from collections import OrderedDict
+import zipfile
 
 with open("metadata.json") as json_file:
     data = json.load((json_file), object_pairs_hook=OrderedDict) #For some reason the order is randomised, this preserves the order.
@@ -33,7 +34,7 @@ def GenOPF():
     opf.write('\t\t<dc:date>' + (time.strftime("%Y-%m-%d")) + '</dc:date>\n') #YYYY[-MM[-DD]]
     opf.write('\t\t<dc:language>' + data["language"] + '</dc:language>\n')
     opf.write('\t\t<dc:rights>' + data["rights"] + '</dc:rights>\n')
-    opf.write('\t\t<meta content="main_cover_image" name="cover"/>\n')
+    opf.write('\t\t<meta content="cover" name="cover"/>\n')
 
     #Fixed (non-reflowable) support
     if (data["textPresentation"] == "Reflowable" or data["textPresentation"] == "reflowable" or data["textPresentation"] == "reflow"):
@@ -73,29 +74,51 @@ def GenOPF():
     imageindex = 0
 
     for subdir, dirs, files in os.walk(data["containerFolder"] + os.sep + data["imagesFolder"]):
+
         for file in files:
             filepath = subdir + os.sep + file
             correctfilepath = filepath.replace(data["containerFolder"] + os.sep, "") #removes the redudant OEBPS
 
-            if filepath.endswith(".jpg") or filepath.endswith(".jpeg") or filepath.endswith(".jpe"):
-                opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/jpeg"/>\n')
-                print (filepath)
-                imageindex += 1
+            if file == data["epubCover"]:
+            
+                if filepath.endswith(".jpg") or filepath.endswith(".jpeg") or filepath.endswith(".jpe"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/jpeg"/>\n')
+                    print (filepath)
 
-            elif filepath.endswith(".png"):
-                opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/png"/>\n')
-                print (filepath)
-                imageindex += 1
+                elif filepath.endswith(".png"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/png"/>\n')
+                    print (filepath)
 
-            elif filepath.endswith(".gif"):
-                opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/gif"/>\n')
-                print (filepath)
-                imageindex += 1
+                elif filepath.endswith(".gif"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/gif"/>\n')
+                    print (filepath)
+                    imageindex += 1
 
-            elif filepath.endswith(".svg"):
-                opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/svg+xml"/>\n')
-                print (filepath)
-                imageindex += 1
+                elif filepath.endswith(".svg"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/svg+xml"/>\n')
+                    print (filepath)
+
+            if file != data["epubCover"]:
+            
+                if filepath.endswith(".jpg") or filepath.endswith(".jpeg") or filepath.endswith(".jpe"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/jpeg"/>\n')
+                    print (filepath)
+                    imageindex += 1
+
+                elif filepath.endswith(".png"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/png"/>\n')
+                    print (filepath)
+                    imageindex += 1
+
+                elif filepath.endswith(".gif"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/gif"/>\n')
+                    print (filepath)
+                    imageindex += 1
+
+                elif filepath.endswith(".svg"):
+                    opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/svg+xml"/>\n')
+                    print (filepath)
+                    imageindex += 1
 
     #Write out all the pages in the book.
     #Count all the instances within the pages block.
@@ -194,32 +217,47 @@ def GenNCX():
     totalpages = len(data["pages"]) #Number of pages
 
     while currentpage != totalpages: #Write out all the xhtml files as declared in the JSON, indendation currently unsupported (data["pages"][currentpage]["indentation"].
-
-        ncx.write('\t<navPoint id="navpoint-' + str(currentpage) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
+        ncx.write('\t<navPoint id="navpoint-' + str(index) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
         ncx.write('\t\t<navLabel>\n')
         ncx.write('\t\t\t<text>' + data["pages"][currentpage]["pageName"] + '</text>\n')
         ncx.write('\t\t</navLabel>\n')
-        ncx.write('\t\t<content src="'+ data["pages"][currentpage]["fileName"] +'" />\n')
-        ncx.write('\t</navPoint>\n')
+        ncx.write('\t\t<content src="' + data["pages"][currentpage]["fileName"] + '" />\n')
 
+    #Write out the page's anchor tags.
+        try:
+            currentanchor = 0
+            totalanchors = len(data["pages"][currentpage]["anchorNames"])
+    
+            while currentanchor != totalanchors:
+                index += 1
+                
+                ncx.write('\t\t<navPoint id="navpoint-' + str(index) + '" playOrder="' + str(index) + '">\n') #id=001 class=h1 playOrder=1
+                ncx.write('\t\t\t\t<navLabel>\n')
+                ncx.write('\t\t\t\t\t<text>' + data["pages"][currentpage]["anchorNames"]["anchorName" + str(currentanchor) + ""] + '</text>\n')
+                ncx.write('\t\t\t\t</navLabel>\n')
+                ncx.write('\t\t\t\t<content src="'+ data["pages"][currentpage]["fileName"] + data["pages"][currentpage]["anchorLinks"]["anchorLink" + str(currentanchor) + ""] + '" />\n')
+                ncx.write('\t\t</navPoint>\n')
+                
+                currentanchor += 1
+                
+            print('Added anchor tags to page ' + str(currentpage) + ', ' + data["pages"][currentpage]["fileName"] + '.')
+
+        except KeyError:
+            print('Skipped page ' + str(currentpage) + ', ' + data["pages"][currentpage]["fileName"] + ' as it had no anchor tags.')
+
+        ncx.write('\t</navPoint>\n')
+        
         currentpage += 1
         index += 1
-
+        
     ncx.write('</navMap>\n')
-
+    
     #End of file
     ncx.write('</ncx>')
 
 def GenEpub():
 #GenEpub.py - Generates an .epub file from the data provided.
 #Ideally with no errors or warnings from epubcheck (needs to be implemented, maybe with the Python wrapper).
-
-    import os
-    import json
-    import zipfile
-
-    with open('metadata.json') as json_file:
-        data = json.load(json_file)
 
     #Generate the mimetype.
     mime = open("mimetype", "w")
@@ -229,6 +267,12 @@ def GenEpub():
     mime.close()
 
     #Generate the META-INF.
+    try:
+        os.stat('META-INF')
+
+    except:
+        os.mkdir('META-INF')
+
     metainf = open('META-INF' + os.sep + "container.xml", "w")
 
     metainf.write('<?xml version="1.0"?>\n')
@@ -248,16 +292,18 @@ def GenEpub():
     for dirname, subdirs, files in os.walk('META-INF'):
         zf.write(dirname)
         for filename in files:
-            zf.write(os.path.join(dirname, filename))
-            print('dirname:' + dirname)
-            print('filename:' + filename)
+            if filename != '.DS_Store': #epubcheck hates uninvited files and macOS places these everywhere.
+                    zf.write(os.path.join(dirname, filename))
+                    print('dirname:' + dirname)
+                    print('filename:' + filename)
 
     for dirname, subdirs, files in os.walk(data["containerFolder"]):
         zf.write(dirname)
         for filename in files:
-            zf.write(os.path.join(dirname, filename))
-            print('dirname:' + dirname)
-            print('filename:' + filename)
+            if filename != '.DS_Store': #epubcheck hates uninvited files
+                zf.write(os.path.join(dirname, filename))
+                print('dirname:' + dirname)
+                print('filename:' + filename)
 
     zf.close()
 

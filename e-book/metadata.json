@@ -1,0 +1,105 @@
+{
+		"comment0": "Metadata.json - Insert the e-book's metadata here, so that the content.opf and toc.ncx files can be filled. May use data for ONIX3 too. WIP",
+
+		"comment1": "Folder metadata - This contains the names of the technical folders, if you change the default names please update them here.",
+		"containerFolder": "OEBPS",
+		"cssFolder": "styles",
+		"imagesFolder": "images",
+		"fontsFolder": "fonts",
+
+		"comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover and generateKindle are currently unused but added for futureproofing.",
+		"epubCover": "cover.jpg",
+		"mobiCover": "cover.jpg",
+		"fileName": "HowWeAreEntertained",
+		"epubVersion": "2.0.1",
+		"textPresentation": "Reflowable",
+		"generateKindle": "no",
+		"generateGoogle": "yes",
+
+		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. ISBN number can be declared, as well as the Amazon ASIN. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
+		"title": "How We Are Entertained: The Consequences of the 1983 Great Video Game Crash",
+		"titleShort": "How We Are Entertained",
+		"creator": "Hal Motley",
+		"subject": "Academic",
+		"publisher": "Hal Motley",
+		"ISBN": "-",
+		"ASIN": "-",
+		"language": "en",
+		"rights": "Creative Commons BY-SA 4.0",
+
+		"comment4": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation (default is 1, allowed upto 4), third is the page name and fourth is file itself.",
+		"pages": [
+					{
+						"pageNumber": "0",
+						"indentation": "1",
+						"pageName": "Front Cover",
+						"fileName": "bookcover.xhtml"
+					},
+					{
+						"pageNumber": "1",
+						"indentation": "1",
+						"pageName": "Title",
+						"fileName": "title.xhtml"
+					},
+					{
+						"pageNumber": "2",
+						"indentation": "1",
+						"pageName": "Licenses",
+						"fileName": "license.xhtml",
+						"anchorNames": {
+							"anchorName0": "Content license",
+							"anchorName1": "E-book license"
+						},
+						"anchorLinks": {
+							"anchorLink0": "#content-license",
+							"anchorLink1": "#ebook-license"
+						}
+					},
+					{
+						"pageNumber": "3",
+						"indentation": "1",
+						"pageName": "Contents",
+						"fileName": "toc.xhtml"
+					},
+					{
+						"pageNumber": "4",
+						"indentation": "1",
+						"pageName": "Preface",
+						"fileName": "preface.xhtml"
+					},
+					{
+						"pageNumber": "5",
+						"indentation": "1",
+						"pageName": "Article",
+						"fileName": "article.xhtml",
+						"anchorNames": {
+							"anchorName0": "Abstract",
+							"anchorName1": "Index Terms",
+							"anchorName2": "Introduction",
+							"anchorName3": "The Great Video Game Crash of 1983",
+							"anchorName4": "Recovery of the Console"
+						},
+						"anchorLinks": {
+							"anchorLink0": "#abstract",
+							"anchorLink1": "#indexterms",
+							"anchorLink2": "#introduction",
+							"anchorLink3": "#greatcrash",
+							"anchorLink4": "#recovery"
+						}
+					},
+					{
+						"pageNumber": "6",
+						"indentation": "1",
+						"pageName": "Bibliography",
+						"fileName": "bibliography.xhtml",
+						"anchorNames": {
+							"anchorName0": "References",
+							"anchorName1": "List of Sources for Images"
+						},
+						"anchorLinks": {
+							"anchorLink0": "#references",
+							"anchorLink1": "#imagesources"
+						}
+					}
+				]
+}

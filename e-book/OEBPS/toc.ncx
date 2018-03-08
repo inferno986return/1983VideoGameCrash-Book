@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+	<meta name="dtb:uid" content="-" />
+	<meta name="dtb:depth" content="1" />
+	<meta name="dtb:totalPageCount" content="0" />
+	<meta name="dtb:maxPageNumber" content="0" />
+</head>
+<docTitle>
+	<text>How We Are Entertained</text>
+</docTitle>
+<navMap>
+	<navPoint id="navpoint-1" playOrder="1">
+		<navLabel>
+			<text>Front Cover</text>
+		</navLabel>
+		<content src="bookcover.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-2" playOrder="2">
+		<navLabel>
+			<text>Title</text>
+		</navLabel>
+		<content src="title.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-3" playOrder="3">
+		<navLabel>
+			<text>Licenses</text>
+		</navLabel>
+		<content src="license.xhtml" />
+		<navPoint id="navpoint-4" playOrder="4">
+				<navLabel>
+					<text>Content license</text>
+				</navLabel>
+				<content src="license.xhtml#content-license" />
+		</navPoint>
+		<navPoint id="navpoint-5" playOrder="5">
+				<navLabel>
+					<text>E-book license</text>
+				</navLabel>
+				<content src="license.xhtml#ebook-license" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-6" playOrder="6">
+		<navLabel>
+			<text>Contents</text>
+		</navLabel>
+		<content src="toc.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-7" playOrder="7">
+		<navLabel>
+			<text>Preface</text>
+		</navLabel>
+		<content src="preface.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-8" playOrder="8">
+		<navLabel>
+			<text>Article</text>
+		</navLabel>
+		<content src="article.xhtml" />
+		<navPoint id="navpoint-9" playOrder="9">
+				<navLabel>
+					<text>Abstract</text>
+				</navLabel>
+				<content src="article.xhtml#abstract" />
+		</navPoint>
+		<navPoint id="navpoint-10" playOrder="10">
+				<navLabel>
+					<text>Index Terms</text>
+				</navLabel>
+				<content src="article.xhtml#indexterms" />
+		</navPoint>
+		<navPoint id="navpoint-11" playOrder="11">
+				<navLabel>
+					<text>Introduction</text>
+				</navLabel>
+				<content src="article.xhtml#introduction" />
+		</navPoint>
+		<navPoint id="navpoint-12" playOrder="12">
+				<navLabel>
+					<text>The Great Video Game Crash of 1983</text>
+				</navLabel>
+				<content src="article.xhtml#greatcrash" />
+		</navPoint>
+		<navPoint id="navpoint-13" playOrder="13">
+				<navLabel>
+					<text>Recovery of the Console</text>
+				</navLabel>
+				<content src="article.xhtml#recovery" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-14" playOrder="14">
+		<navLabel>
+			<text>Bibliography</text>
+		</navLabel>
+		<content src="bibliography.xhtml" />
+		<navPoint id="navpoint-15" playOrder="15">
+				<navLabel>
+					<text>References</text>
+				</navLabel>
+				<content src="bibliography.xhtml#references" />
+		</navPoint>
+		<navPoint id="navpoint-16" playOrder="16">
+				<navLabel>
+					<text>List of Sources for Images</text>
+				</navLabel>
+				<content src="bibliography.xhtml#imagesources" />
+		</navPoint>
+	</navPoint>
+</navMap>
+</ncx>
