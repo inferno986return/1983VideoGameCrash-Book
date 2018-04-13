@@ -1,6 +1,8 @@
 # How People Are Entertained: The Consequences of the 1983 Great Video Game Crash
 ## 2nd Edition (Improved grammar, checked sources and general fixes)
 
+Download the e-book in PDF, ePub and Mobi formats on [itch.io](https://inferno986return.itch.io/how-we-are-entertained). If you really like the article, you can give feedback or even buy me a coffee. :-)
+
 ## Overview:
 
 This is an article I wrote up on the North American 1983 Video Game Crash and the death + revival of open consoles (game consoles that formally allow/encourage homebrew and modification).
