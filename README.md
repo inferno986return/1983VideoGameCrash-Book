@@ -1,7 +1,9 @@
 # How People Are Entertained: The Consequences of the 1983 Great Video Game Crash
 ## 2nd Edition (Improved grammar, checked sources and general fixes)
 
-Download the e-book in PDF, ePub and Mobi formats on [itch.io](https://inferno986return.itch.io/how-we-are-entertained). If you really like the article, you can give feedback or even buy me a coffee. :-)
+<iframe frameborder="0" src="https://itch.io/embed/243601" width="552" height="167"></iframe>
+
+Download the e-book in PDF, ePub and Mobi formats on [itch.io](https://inferno986return.itch.io/how-we-are-entertained). If you really like the article, you can give feedback or even buy me a coffee via https://www.paypal.me/HalMotley :-)
 
 ## Overview:
 
