@@ -5,7 +5,7 @@
 		<dc:subject>Academic</dc:subject>
 		<dc:publisher>Hal Motley</dc:publisher>
 		<dc:identifier id="bookid">-</dc:identifier>
-		<dc:date>2018-03-11</dc:date>
+		<dc:date>2020-06-17T18:09:33</dc:date>
 		<dc:language>en</dc:language>
 		<dc:rights>Creative Commons BY-SA 4.0</dc:rights>
 		<meta content="cover" name="cover"/>
@@ -19,19 +19,19 @@
 		<item href="images/cover.jpg" id="cover" media-type="image/jpeg"/>
 		<item href="images/ouyae-book.jpg" id="image3" media-type="image/jpeg"/>
 		<item href="images/steammachinee-book.jpg" id="image4" media-type="image/jpeg"/>
-		<item href="bookcover.xhtml" id="front_cover" media-type="application/xhtml+xml"/>
+		<item href="bookcover.xhtml" id="bookcover" media-type="application/xhtml+xml"/>
 		<item href="title.xhtml" id="title" media-type="application/xhtml+xml"/>
-		<item href="license.xhtml" id="licenses" media-type="application/xhtml+xml"/>
-		<item href="toc.xhtml" id="contents" media-type="application/xhtml+xml"/>
+		<item href="license.xhtml" id="license" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc" media-type="application/xhtml+xml"/>
 		<item href="preface.xhtml" id="preface" media-type="application/xhtml+xml"/>
 		<item href="article.xhtml" id="article" media-type="application/xhtml+xml"/>
 		<item href="bibliography.xhtml" id="bibliography" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine toc="ncx">
-		<itemref idref="front_cover"/>
+		<itemref idref="bookcover"/>
 		<itemref idref="title"/>
-		<itemref idref="licenses"/>
-		<itemref idref="contents"/>
+		<itemref idref="license"/>
+		<itemref idref="toc"/>
 		<itemref idref="preface"/>
 		<itemref idref="article"/>
 		<itemref idref="bibliography"/>

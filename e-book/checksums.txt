@@ -1,0 +1,6 @@
+Checksum values for HowWeAreEntertained.epub on 2020-06-17 18:09:33UTC
+=================================================================================
+
+MD5: bc2a3669f3c23a77aa36ac8537af2fab
+SHA-256: 9dc342f717bffc529177877d74b9e47fe26d98ef1a861159162e7f2e720cd92c
+SHA-512: 10a37141f0a2212bdb377d7f7273aa11fabc412f2d74ceaf1e300d111bc46c98f0bf5f81f5616c93b1d654b1ccde00eff5fc2e04215d87c8c0111e0175b6ddc6
