@@ -17,7 +17,7 @@ I have provided an ePub and the code needed to recreate it, feel free to use the
 
 ### Compiling:
 
-A new ePub file can be made by using the provided `ebookbuild.py` via installing [Python 3](https://www.python.org/downloads/) and then running the script on IDLE, [Thonny](http://thonny.org/) or the `python3 ebookbuild.py` command on Bash (the macOS/GNU-Linux terminal, Bash can also be installed on Windows 10 via [Windows Subsystem for Linux](https://lifehacker.com/how-to-get-started-with-the-windows-subsystem-for-linux-1828952698). The script however **does not** work with Python 2 and I have no plans to backport.
+A new ePub file can be made by using the provided `ebookbuild.py` via installing [Python 3](https://www.python.org/downloads/) and then running the script on IDLE, [Thonny](http://thonny.org/) or the `python3 ebookbuild.py` command on Bash (the macOS/GNU-Linux terminal, Bash can also be installed on Windows 10 via [Windows Subsystem for Linux](https://lifehacker.com/how-to-get-started-with-the-windows-subsystem-for-linux-1828952698)). The script however **does not** work with Python 2 and I have no plans to backport.
 
 XHTML, CSS and the `metadata.json` files can be edited using a text editor such as [Atom](https://atom.io/) and [Notepad++](https://notepad-plus-plus.org/).
 
